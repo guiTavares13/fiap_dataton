@@ -32,7 +32,7 @@ def login():
 def get_recommendations():
     user_id = request.args.get('user_id')  
     
-    if user_id:
+    if user_id: 
         # Verifica se o usuário existe no DataFrame
         user_row = df_user_acc[df_user_acc['userId'] == user_id]
         if user_row.empty:
